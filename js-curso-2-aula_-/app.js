@@ -10,7 +10,7 @@ responsiveVoice.speak(texto , 'Brazilian Portuguese Female', {rate:1.2});
 
 function mensagemInicial(){
 mostrarTexto('h1', "jogo do número secreto");
-mostrarTexto('p', "Escolha um numero entre 1 e 10");
+mostrarTexto('p', "Escolha um numero entre 1 e 100");
 }
 mensagemInicial();
 
@@ -34,10 +34,10 @@ function verificarChute(){
     }
 }
 function numeroAleatorio () {
-   numeroEscolhido = parseInt(Math.random() *10 + 1);
+   numeroEscolhido = parseInt(Math.random() *100 + 1);
    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
-   if (quantidadeDeElementosNaLista == 10){
+   if (quantidadeDeElementosNaLista == 100){
     listaDeNumerosSorteados = [];
    }
    if (listaDeNumerosSorteados.includes(numeroEscolhido)){
